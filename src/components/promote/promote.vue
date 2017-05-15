@@ -13,6 +13,7 @@
 <script type="ecmascript-6">
   import store from 'vuexpath/store'
   import { mapState, mapActions, mapMutations } from 'vuex'
+  import router from 'routerpath/index'
   export default {
     created() {
       this.checkLogin()
