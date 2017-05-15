@@ -14,11 +14,22 @@
   import store from 'vuexpath/store'
   import { mapState, mapActions, mapMutations } from 'vuex'
   export default {
+    created() {
+      this.checkLogin()
+    },
     computed: {
       ...mapState(["pageInfo"])
     },
     data() {
       return {
+      }
+    },
+    methods: {
+      checkLogin() {
+        console.log(this.pageInfo)
+        if (!this.page.login) {
+          router.push('/login')
+        }
       }
     },
     store
