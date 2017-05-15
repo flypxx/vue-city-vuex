@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-const store = new Vuex.Store({
+export default new Vuex.Store({
   state: {
     pageInfo: {
       phone: '15210881566',
@@ -19,5 +19,3 @@ const store = new Vuex.Store({
     }
   }
 })
-
-export default store

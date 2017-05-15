@@ -11,9 +11,14 @@
 </template>
 
 <script type="ecmascript-6">
-  import store from 'vuexpath/store'
+  import store from '@/vuex/store'
   export default {
-
+    data() {
+      return {
+        pageInfomation: 'yes'
+      }
+    },
+    store
   }
 </script>
 
