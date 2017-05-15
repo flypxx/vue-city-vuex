@@ -2,20 +2,23 @@
   <div class="promote">
     <div class="page-message">
       <h1>page message</h1>
-      <p class="message-item"></p>
-      <p class="message-item"></p>
-      <p class="message-item"></p>
-      <p class="message-item"></p>
+      <p class="message-item">{{pageInfo.name}}</p>
+      <p class="message-item">{{pageInfo.phone}}</p>
+      <p class="message-item">{{pageInfo.deviceId}}</p>
+      <p class="message-item">{{pageInfo.login ? 'yes' : 'no'}}</p>
     </div>
   </div>
 </template>
 
 <script type="ecmascript-6">
   import store from 'vuexpath/store'
+  import { mapState, mapActions, mapMutations } from 'vuex'
   export default {
+    computed: {
+      ...mapState(["pageInfo"])
+    },
     data() {
       return {
-        pageInfomation: 'yes'
       }
     },
     store
