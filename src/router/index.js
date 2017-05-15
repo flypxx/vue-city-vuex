@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Promote from '@/components/promote/promote'
+import Promote from 'components/promote/promote'
 
 Vue.use(Router)
 
