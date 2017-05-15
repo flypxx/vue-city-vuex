@@ -11,7 +11,7 @@
 </template>
 
 <script type="ecmascript-6">
-  import store from 'vuex/store'
+  import store from 'vuexpath/store'
   export default {
     data() {
       return {
