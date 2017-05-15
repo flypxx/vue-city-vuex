@@ -28,8 +28,8 @@
     methods: {
       checkLogin() {
         console.log(this.pageInfo)
-        if (!this.page.login) {
-          router.push('/login')
+        if (!this.pageInfo.login) {
+          // router.push('login')
         }
       }
     },
