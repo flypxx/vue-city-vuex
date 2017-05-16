@@ -1,7 +1,7 @@
 <template>
   <div class="promote">
     <div class="page-message">
-      <h1>Welcome {{{{pageInfo.name}}}}</h1>
+      <h1>Welcome {{pageInfo.name}}</h1>
       <p class="message-item">your phone {{pageInfo.phone}}</p>
       <p class="message-item">your deviceId {{pageInfo.deviceId}}</p>
       <button type="button" @click.stop.prevent="logoutAccount()"></button>
