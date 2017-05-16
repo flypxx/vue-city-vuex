@@ -13,13 +13,13 @@
 </template>
 
 <script type="ecmascript-6">
-  import store from 'vuexpath/store'
-  import { mapState, mapActions, mapMutations } from 'vuex'
+  // import store from 'vuexpath/store'
+  // import { mapState, mapActions, mapMutations } from 'vuex'
   export default {
     data() {
       return {}
     },
-    store
+    // store
   }
 </script>
 

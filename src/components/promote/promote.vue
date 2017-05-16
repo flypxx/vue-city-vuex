@@ -29,7 +29,7 @@
       checkLogin() {
         console.log(this.pageInfo)
         if (!this.pageInfo.login) {
-          // router.push('login')
+          router.push('login')
         }
       }
     },

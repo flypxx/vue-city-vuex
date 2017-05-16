@@ -8,14 +8,15 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/promote',
       name: 'promote',
       component: Promote
     },
     {
-      path: '/',
+      path: '/login',
       name: 'login',
       component: Login
     }
-  ]
+  ],
+  linkActiveClass: 'active'
 })
