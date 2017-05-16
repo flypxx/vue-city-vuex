@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app-page">
     <router-view></router-view>
   </div>
 </template>
@@ -10,6 +10,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="stylus" rel="stylesheet/stylus">
+.app-page
+  text-align center
 </style>
