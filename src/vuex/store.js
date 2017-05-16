@@ -13,9 +13,11 @@ export default new Vuex.Store({
     }
   },
   mutations: {
-    login(state, deviceId) {
+    login(state, pageInfo) {
       state.pageInfo.login = true
-      state.pageInfo.deviceId = deviceId
+      state.pageInfo.name = pageInfo.name
+      state.pageInfo.deviceId = pageInfo.deviceId
+      state.pageInfo.phone = pageInfo.phone
     }
   }
 })
