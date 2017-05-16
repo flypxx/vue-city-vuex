@@ -18,6 +18,12 @@ export default new Vuex.Store({
       state.pageInfo.name = pageInfo.name
       state.pageInfo.deviceId = pageInfo.deviceId
       state.pageInfo.phone = pageInfo.phone
+    },
+    logout(state) {
+      state.pageInfo.login = false
+      state.pageInfo.name = ''
+      state.pageInfo.deviceId = ''
+      state.pageInfo.phone = ''
     }
   }
 })

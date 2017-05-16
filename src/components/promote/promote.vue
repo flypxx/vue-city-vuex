@@ -1,11 +1,10 @@
 <template>
   <div class="promote">
     <div class="page-message">
-      <h1>page message</h1>
-      <p class="message-item">{{pageInfo.name}}</p>
-      <p class="message-item">{{pageInfo.phone}}</p>
-      <p class="message-item">{{pageInfo.deviceId}}</p>
-      <p class="message-item">{{pageInfo.login ? 'yes' : 'no'}}</p>
+      <h1>Welcome {{{{pageInfo.name}}}}</h1>
+      <p class="message-item">your phone {{pageInfo.phone}}</p>
+      <p class="message-item">your deviceId {{pageInfo.deviceId}}</p>
+      <button type="button" @click.stop.prevent="logoutAccount()"></button>
     </div>
   </div>
 </template>
@@ -30,6 +29,12 @@
         console.log(this.pageInfo)
         if (!this.pageInfo.login) {
           router.push('login')
+        }
+      },
+      logoutAccount() {
+        store.commit('logout')
+        if (!store.state.pageInfo.login) {
+          router.push('promote')
         }
       }
     },
